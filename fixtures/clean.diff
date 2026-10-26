@@ -1,0 +1,18 @@
+diff --git a/src/math.rs b/src/math.rs
+index 7777777..8888888 100644
+--- a/src/math.rs
++++ b/src/math.rs
+@@ -1,6 +1,9 @@
+ pub fn clamp(v: i64, lo: i64, hi: i64) -> i64 {
+     if v < lo {
+         lo
+     } else if v > hi {
+         hi
+     } else {
+         v
+     }
+ }
++
++pub fn midpoint(a: i64, b: i64) -> i64 {
++    a + (b - a) / 2
++}
